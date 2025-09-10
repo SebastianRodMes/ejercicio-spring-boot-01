@@ -11,7 +11,7 @@
 
     <li> <strong>Nombre:</strong> <span th:text="${empleado.nombre}"></span></li>
     <li> <strong>Apellido:</strong> <span th:text="${empleado.apellido}"></span></li>
-    <li> <strong>Direccion:</strong> <span th:text="${empleado.direccion}"></span></li>
+    <li> <strong>Direccion:</strong> <span th:if="${empleado.direccion != null }" th:text = "${empleado.direccion}">Sin direccion</span></li>
     <li> <strong>Puesto:</strong> <span th:text="${empleado.puesto}"></span></li>
     <li> <strong>Edad:</strong> <span th:text="${empleado.edad}"></span></li>
     <li> <strong>Id:</strong> <span th:text="${empleado.id}"></span></li>
